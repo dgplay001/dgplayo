@@ -44,10 +44,70 @@
 
   gtag('config', 'G-9P7XFM13F5');
 </script>
-
+ <style>
+        #floating-widget {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            width: 300px;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            z-index: 1000;
+            font-family: Arial, sans-serif;
+            opacity: 0.9;
+        }
+        #floating-widget:hover {
+            opacity: 1;
+        }
+        #widget-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #widget-header img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        #widget-content {
+            margin-top: 10px;
+        }
+        #line-button {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            width: 60px;
+            height: 60px;
+            z-index: 1001;
+            cursor: pointer;
+        }
+        #line-button img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
 </head>
 
 <body>
+	    <div id="floating-widget">
+        <div id="widget-header">
+            <img src="https://your-image-link-here" alt="Logo">
+            <div>
+                <strong>小物件家庭代工</strong>
+                <span>立即聯繫查詢地區配送服務</span>
+            </div>
+        </div>
+        <div id="widget-content">
+            <p>🌟各式家庭手工文具👶髮飾<br>
+            🧩小物件代工，不用搬重，體積小不佔空間，立即查詢配送到府</p>
+        </div>
+    </div>
+
+    <a href="https://line.me/ti/p/SyOGuqmzff" target="_blank" id="line-button">
+        <img src="https://your-line-button-image-link-here" alt="LINE">
+    </a>
 	<div class="site-mobile-menu site-navbar-target">
 		<div class="site-mobile-menu-header">
 			<div class="site-mobile-menu-close">
