@@ -76,26 +76,38 @@
         #line-button {
             position: fixed;
             bottom: 15px;
-            right: 15px;
+            right: 30px; /* 向左移動 */
             width: 60px;
             height: 60px;
             z-index: 1001;
             cursor: pointer;
+            animation: bounce 2s infinite; /* 添加跳動動畫 */
         }
         #line-button img {
             width: 100%;
             height: 100%;
         }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
     </style>
 </head>
 
 <body>
-	    <div id="floating-widget">
+	        <div id="floating-widget">
         <div id="widget-header">
-            <img src="https://i.ibb.co/4g2dz05/Pngtree-chat-icon-3584855.png" alt="Logo">
+            <img src="https://your-image-link-here" alt="Logo">
             <div>
                 <strong>小物件家庭代工</strong>
-                <span>立即聯繫查詢地區配送服務</span>
+                <div>立即聯繫查詢地區配送服務</div>
             </div>
         </div>
         <div id="widget-content">
@@ -104,8 +116,8 @@
         </div>
     </div>
 
-    <a href="https://line.me/ti/p/SyOGuqmzff" target="_blank" id="line-button">
-        <img src="https://i.ibb.co/4g2dz05/Pngtree-chat-icon-3584855.png" alt="LINE">
+    <a href="https://line.me/ti/p/[YourLineID]" target="_blank" id="line-button">
+        <img src="https://your-line-button-image-link-here" alt="LINE">
     </a>
 	<div class="site-mobile-menu site-navbar-target">
 		<div class="site-mobile-menu-header">
